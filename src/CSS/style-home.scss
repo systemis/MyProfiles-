@@ -1,0 +1,556 @@
+body{
+    $color-blue: #44c7f4;
+    $color-black: #212121;
+    $gray-color: #827e7e;
+    $color-fade: #d2d6da;
+
+    @mixin together-char-main-child-edu-skills-experience{
+        color: white;
+        max-height: 769px;
+        min-height: 649px;
+        height: 759px;
+        background-color: #f3f2f2;
+        padding-top: 100px;        
+
+        @media screen and (max-width: 1268px){
+            padding-top: 40px;
+            height: 769px;
+
+            @media screen and (max-width: 990px){
+                height: 649px;
+            }
+        }
+
+    }
+
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    div.App{
+        text-align: left;
+
+        & div.header{
+            position: relative;
+
+            & div.header-about-me-layout{
+                padding: 30px 0px;
+                text-align: center;
+                height: 600px;
+                width: 100%;
+                background-image: url("../Components/Accest/background/background-header.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                
+                & div.show-avatar-jobs{
+                    & div.show-avatar-me{
+                        position: relative;
+                        padding: 20px 0;
+
+                        & img{
+                            width: 215px;
+                            height: 155px;
+                            border: 5px solid $color-blue;
+                        }
+                    }
+
+                    & div.show-simple-info{
+                        color: white;
+
+                        & div.show-name{
+                            & h1{
+                                font-family: "Comic Sans MS", cursive, sans-serif;
+                                text-transform: uppercase;
+                                font-size: 2em;
+
+                                @media screen and (max-width: 768px){
+                                    font-size: 1.9em;
+                                }
+                            }
+
+                            padding: 10px 0 5px 0;
+                        }
+
+                        @mixin change-font-size($size-change){
+                            @media screen and (max-width: 768px){
+                                font-size: $size-change;
+                            }
+                        }
+
+                        & div.show-jobs{
+                            & p{
+                                color: $color-blue;
+                                letter-spacing: 4px;
+                                font-size: 1.5em;
+                                @include change-font-size(1.2em);
+                            }
+                        }
+
+
+                        & div.show-voculary{
+                            & p{
+                                padding: 25px 0;
+                                font-family: "Courier New", Courier, monospace;
+                                font-size: 1.5em;
+
+                                @include change-font-size(1em);
+                            }
+                        }
+                    }
+                }
+
+                & div.header-about-me-social-network-list{
+                    & ul{
+                        list-style-type: none;
+
+                        & li.social-net-work-item{
+                            display: inline-block;
+
+                            & a{
+                                padding: 5px;
+
+                                & i{
+                                    color: white;
+                                    font-size: 15px;
+                                    line-height: 31px;
+                                    text-align: center;
+                                    width: 36px;
+                                    height: 36px;
+                                    border: 2px solid #fff;
+                                    -webkit-transition: all 0.5s ease-in-out;
+
+                                    &:hover{
+                                        color: $color-blue;
+                                    }
+                                }           
+                            }
+                        } 
+                    }
+                }
+            }
+
+            @media screen and (max-width: 768px){
+                padding: 40px 0px;
+            }
+        }
+
+        
+        & div.content{
+            padding: 0;
+            padding-top: 25px;
+
+            & div.content-about-me{
+                & div.row{
+                    & div.content-about-me-show-avatar-me{
+                        padding: 0 15px;
+                        position: relative;
+                        min-height: 1px;
+
+                        & img{
+                            width: 100%;
+                        }
+                    }
+
+                    & div.show-info-me-group{
+                        position: relative;
+
+                        & div.about-info-me-item{
+                            width: 100%;
+                            border-bottom: 1px dashed $color-blue;
+                            text-align: justify;
+                            padding: 0 15px;
+
+                            & div.info-me-title{
+                                & strong{
+                                    font-size: 16px;
+                                    color: $color-black;
+                                    text-transform: uppercase;
+                                    font-family: Tahoma, Geneva, sans-serif;
+                                }
+                            }
+
+                            & div.info-me-value{
+                                @mixin off{
+                                    font-size: 15px;
+                                    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                                    padding: 5px 0 12px 0;
+                                }
+
+                                & h4{
+                                    color: #827e7e;
+                                    @include off();
+                                }
+
+                                & a{
+                                    color: $color-blue;
+                                }
+                            }
+
+                            &:not(:first-child){
+                                margin-top: 40px;
+                            }
+                        }
+
+                        @media screen and(max-width: 768px) {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            & div.content-service{
+                min-height: 519px;
+                width: 100%;
+                padding-top: 50px;
+                margin: 40px 0 0px 0;
+                background-repeat: no-repeat;
+                background-image: url("../Components/Accest/background/background-service.jpg");
+                background-size: 100% 519px;
+
+                & div.show-services{
+                    padding: 0 15px;
+                    & div.service-item{
+                        text-align: center;
+
+                        & div.show-icon{
+                            & i.fa{
+                                color: white;
+                                font-size: 4em;
+                            }
+                        }
+
+                        & div.show-title{
+                            & h4{
+                                font-size: 20px;
+                                margin: 0.5em 0;
+                                color: $color-blue;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                font-family: Georgia, serif;
+                            }
+                        }
+
+                        & div.show-des{
+                            & p{
+                                font-size: 16px;
+                                color: $color-fade;
+                                padding: 0 0 1em 0;
+                                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                            }
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 768px){
+                    &{
+                        background-size: 100% 120%;
+                    }
+                }
+            }
+
+            & div.content-edu-skills{
+                
+            }
+
+            & div.content-skills-group{
+                @include together-char-main-child-edu-skills-experience();
+                position: relative;
+                background-image: url("../Components/Accest/background/background-header.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+
+                & div.show-my-skills{
+                    padding: 20px 15px;
+
+                    & div.my-skill-item{
+                        margin: 15px 0;
+
+                        & div.progress{
+                            margin-top: 5px;
+                            height: 22px;
+
+                            & div.progress-bar{
+                                color: black;
+                            }
+                        }
+                    }  
+                }
+            }
+
+            // & div.content-more-skills-experience{
+            //     & div.more-skills-experience-more-skills{
+            //         @include together-char-main-child-edu-skills-experience();
+            //         background-image: url("../Components/Accest/background/background-header.jpg");
+            //         background-size: 100% 100%;
+            //         background-repeat: no-repeat;
+                    
+            //         & div.row{
+            //             & div.more-skill-item{
+            //                 text-align: center;
+
+            //                 & h2{
+            //                     margin: 15px 0;
+            //                     font-size: 20px;
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+
+            & div.content-my-gallery{
+                padding: 10px 15px 20px 15px;
+
+                & div.show-my-gallery{
+                    & div.image-item{
+                        padding: 10px;
+                        & div.child{
+                            position: relative;
+
+                            & div.show-image{
+                                & img{
+                                    width: 100%;
+                                }
+                            }
+
+                            & div.show-text{
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                height: 100%;
+                                width: 100%;
+                                background-color: transparent;
+                                padding: 10px;
+                                
+                                & div.child{
+                                    width: 100%;
+                                    height: 100%;
+                                    text-align: center; 
+                                    border: 1px solid $color-blue;
+
+                                    & h4{
+                                        color: $color-blue;
+                                        font-size: 25px;
+                                        font-family: 'Times New Roman', Times, serif;
+                                        text-transform: uppercase;
+                                    }
+
+                                    @media screen and (max-width: 921px){
+                                        &{
+                                            & h4{
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+
+                                    @media screen and (max-width: 768px) {
+                                        &{
+                                            & h4{
+                                                font-size: 40px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:hover{
+                                & div.show-text{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & div.content-what-i-did{
+                width: 100%;
+                min-height: 400px;
+                max-height: 600px;
+                background-image: url("../Components/Accest/background/background-header.jpg");
+                background-size: 100% 400px;
+                background-repeat: no-repeat;
+                padding-top: 150px;
+
+                & div.i-did-item{
+                    text-align: center;
+                    padding: 10px 0;
+
+                    & div.show-icon{
+                        & i{
+                            font-size: 40px;
+                            color: $color-blue;
+                        }
+                    }
+
+                    & div.show-name{
+                        color: white;
+                        font-size: 20px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        text-transform: uppercase;
+                    }
+
+                    & div.show-count{
+                        font-size: 16px;
+                        color: white;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                }
+
+                @media screen and (max-width: 768px){
+                    padding-top: 100px;
+                }
+            }
+
+            & div.content-contact-me{
+                width: 100%;
+                min-height: 149px;
+                background-color: black;
+                padding: 15px;
+                margin-top: 40px;
+
+                & div.container{
+                    & div.contact-me-item{
+                        padding: 10px 10px;
+                        text-align: center;
+
+                        & div.child{
+                            background-color: #333;
+                            padding: 10px ;
+
+                            & div.show-icon{
+                                background-color: $color-blue;
+                                border-radius: 50px;
+                                width: 55px;
+                                height: 55px;
+                                margin: 0 auto;
+
+                                & i{
+                                    color: #fff;
+                                    font-size: 1em;
+                                    line-height: 3.4em;
+                                }
+                            }
+
+                            & div.show-way{
+                                color: white;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-family: Georgia, 'Times New Roman', Times, serif;
+                                padding: 5px 0;
+                            }
+
+                            & div.show-value{
+                                color: #999;
+                                font-size: 14px;
+                                font-family: 'Times New Roman', Times, serif;
+                            }
+
+                            &:hover{
+                                &{
+                                    & div.show-icon{
+                                        background-color: white;
+                                        
+                                        & i{ color: black; }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & div.heading-title-cm-bottom-text{
+                padding: 10px 0 30px 0;
+                text-align: center;
+
+                & h1{
+                    color: #111;
+                    font-size: 2em;
+                    letter-spacing: 2px;
+                    font-family: 'Gidugu', sans-serif;
+                    text-transform: uppercase;
+
+                    &.white-color{
+                        color: white;
+                    }
+
+                    &.blue-color{
+                        color: $color-blue;
+                    }
+                }
+
+                & h4{
+                    font-family: "Courier New", Courier, monospace;
+                    color: $color-blue;
+                    font-size: 25px;
+                    height: 1.4;
+                    text-transform: uppercase;
+                }
+
+                @media screen and(max-width: 768px){
+                    & h1{
+                        font-size: 1.7em;
+                    }
+
+                    & h4{
+                        font-size: 1.0em;
+                    }
+                }
+            }
+
+
+            & div.content-show-fields-group{
+                @include together-char-main-child-edu-skills-experience();
+                & div.show-fields-group{
+                    
+                    & div.time-field-item{
+                        margin: 15px;
+                        
+                        &:not(:last-child){
+                            border-bottom: 0.5px solid gray;
+                        }
+                        
+                        & div.row{
+                            & div.field-item-time{
+                                border-left: 5px solid red;
+
+                                padding: 10px 5px;
+
+                                & strong{
+                                    color: black;
+                                    font-size: 18px;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    font-family: Georgia, serif;
+                                    text-align: justify;
+                                }
+                            }
+
+                            & div.field-item-description{
+                                & div.show-field-name{
+                                    color: black;
+                                    font-size: 1.6em;
+                                    font-family: 'Times New Roman', Times, serif;
+                                    text-transform: uppercase;
+                                }
+
+                                & div.show-field-description{
+                                    & p{
+                                        color:black;
+                                        font-size: 0.9em;
+                                        line-height: 1.9em;
+                                        color: #777;
+                                        text-align: justify;
+                                        padding-top: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

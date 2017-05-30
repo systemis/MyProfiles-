@@ -1,0 +1,318 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  body div.App {
+    text-align: left; }
+    body div.App div.header {
+      position: relative; }
+      body div.App div.header div.header-about-me-layout {
+        padding: 30px 0px;
+        text-align: center;
+        height: 600px;
+        width: 100%;
+        background-image: url("../Components/Accest/background/background-header.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat; }
+        body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-avatar-me {
+          position: relative;
+          padding: 20px 0; }
+          body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-avatar-me img {
+            width: 215px;
+            height: 155px;
+            border: 5px solid #44c7f4; }
+        body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info {
+          color: white; }
+          body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info div.show-name {
+            padding: 10px 0 5px 0; }
+            body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info div.show-name h1 {
+              font-family: "Comic Sans MS", cursive, sans-serif;
+              text-transform: uppercase;
+              font-size: 2em; }
+              @media screen and (max-width: 768px) {
+                body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info div.show-name h1 {
+                  font-size: 1.9em; } }
+          body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info div.show-jobs p {
+            color: #44c7f4;
+            letter-spacing: 4px;
+            font-size: 1.5em; }
+            @media screen and (max-width: 768px) {
+              body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info div.show-jobs p {
+                font-size: 1.2em; } }
+          body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info div.show-voculary p {
+            padding: 25px 0;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.5em; }
+            @media screen and (max-width: 768px) {
+              body div.App div.header div.header-about-me-layout div.show-avatar-jobs div.show-simple-info div.show-voculary p {
+                font-size: 1em; } }
+        body div.App div.header div.header-about-me-layout div.header-about-me-social-network-list ul {
+          list-style-type: none; }
+          body div.App div.header div.header-about-me-layout div.header-about-me-social-network-list ul li.social-net-work-item {
+            display: inline-block; }
+            body div.App div.header div.header-about-me-layout div.header-about-me-social-network-list ul li.social-net-work-item a {
+              padding: 5px; }
+              body div.App div.header div.header-about-me-layout div.header-about-me-social-network-list ul li.social-net-work-item a i {
+                color: white;
+                font-size: 15px;
+                line-height: 31px;
+                text-align: center;
+                width: 36px;
+                height: 36px;
+                border: 2px solid #fff;
+                -webkit-transition: all 0.5s ease-in-out; }
+                body div.App div.header div.header-about-me-layout div.header-about-me-social-network-list ul li.social-net-work-item a i:hover {
+                  color: #44c7f4; }
+      @media screen and (max-width: 768px) {
+        body div.App div.header {
+          padding: 40px 0px; } }
+    body div.App div.content {
+      padding: 0;
+      padding-top: 25px; }
+      body div.App div.content div.content-about-me div.row div.content-about-me-show-avatar-me {
+        padding: 0 15px;
+        position: relative;
+        min-height: 1px; }
+        body div.App div.content div.content-about-me div.row div.content-about-me-show-avatar-me img {
+          width: 100%; }
+      body div.App div.content div.content-about-me div.row div.show-info-me-group {
+        position: relative; }
+        body div.App div.content div.content-about-me div.row div.show-info-me-group div.about-info-me-item {
+          width: 100%;
+          border-bottom: 1px dashed #44c7f4;
+          text-align: justify;
+          padding: 0 15px; }
+          body div.App div.content div.content-about-me div.row div.show-info-me-group div.about-info-me-item div.info-me-title strong {
+            font-size: 16px;
+            color: #212121;
+            text-transform: uppercase;
+            font-family: Tahoma, Geneva, sans-serif; }
+          body div.App div.content div.content-about-me div.row div.show-info-me-group div.about-info-me-item div.info-me-value h4 {
+            color: #827e7e;
+            font-size: 15px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            padding: 5px 0 12px 0; }
+          body div.App div.content div.content-about-me div.row div.show-info-me-group div.about-info-me-item div.info-me-value a {
+            color: #44c7f4; }
+          body div.App div.content div.content-about-me div.row div.show-info-me-group div.about-info-me-item:not(:first-child) {
+            margin-top: 40px; }
+        @media screen and (max-width: 768px) {
+          body div.App div.content div.content-about-me div.row div.show-info-me-group {
+            margin-top: 10px; } }
+      body div.App div.content div.content-service {
+        min-height: 519px;
+        width: 100%;
+        padding-top: 50px;
+        margin: 40px 0 0px 0;
+        background-repeat: no-repeat;
+        background-image: url("../Components/Accest/background/background-service.jpg");
+        background-size: 100% 519px; }
+        body div.App div.content div.content-service div.show-services {
+          padding: 0 15px; }
+          body div.App div.content div.content-service div.show-services div.service-item {
+            text-align: center; }
+            body div.App div.content div.content-service div.show-services div.service-item div.show-icon i.fa {
+              color: white;
+              font-size: 4em; }
+            body div.App div.content div.content-service div.show-services div.service-item div.show-title h4 {
+              font-size: 20px;
+              margin: 0.5em 0;
+              color: #44c7f4;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              font-family: Georgia, serif; }
+            body div.App div.content div.content-service div.show-services div.service-item div.show-des p {
+              font-size: 16px;
+              color: #d2d6da;
+              padding: 0 0 1em 0;
+              font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+        @media screen and (max-width: 768px) {
+          body div.App div.content div.content-service {
+            background-size: 100% 120%; } }
+      body div.App div.content div.content-skills-group {
+        color: white;
+        max-height: 769px;
+        min-height: 649px;
+        height: 759px;
+        background-color: #f3f2f2;
+        padding-top: 100px;
+        position: relative;
+        background-image: url("../Components/Accest/background/background-header.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat; }
+        @media screen and (max-width: 1268px) {
+          body div.App div.content div.content-skills-group {
+            padding-top: 40px;
+            height: 769px; } }
+  @media screen and (max-width: 1268px) and (max-width: 990px) {
+    body div.App div.content div.content-skills-group {
+      height: 649px; } }
+        body div.App div.content div.content-skills-group div.show-my-skills {
+          padding: 20px 15px; }
+          body div.App div.content div.content-skills-group div.show-my-skills div.my-skill-item {
+            margin: 15px 0; }
+            body div.App div.content div.content-skills-group div.show-my-skills div.my-skill-item div.progress {
+              margin-top: 5px;
+              height: 22px; }
+              body div.App div.content div.content-skills-group div.show-my-skills div.my-skill-item div.progress div.progress-bar {
+                color: black; }
+      body div.App div.content div.content-my-gallery {
+        padding: 10px 15px 20px 15px; }
+        body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item {
+          padding: 10px; }
+          body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child {
+            position: relative; }
+            body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child div.show-image img {
+              width: 100%; }
+            body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child div.show-text {
+              display: none;
+              position: absolute;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              background-color: transparent;
+              padding: 10px; }
+              body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child div.show-text div.child {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                border: 1px solid #44c7f4; }
+                body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child div.show-text div.child h4 {
+                  color: #44c7f4;
+                  font-size: 25px;
+                  font-family: 'Times New Roman', Times, serif;
+                  text-transform: uppercase; }
+                @media screen and (max-width: 921px) {
+                  body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child div.show-text div.child h4 {
+                    font-size: 16px; } }
+                @media screen and (max-width: 768px) {
+                  body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child div.show-text div.child h4 {
+                    font-size: 40px; } }
+            body div.App div.content div.content-my-gallery div.show-my-gallery div.image-item div.child:hover div.show-text {
+              display: block; }
+      body div.App div.content div.content-what-i-did {
+        width: 100%;
+        min-height: 400px;
+        max-height: 600px;
+        background-image: url("../Components/Accest/background/background-header.jpg");
+        background-size: 100% 400px;
+        background-repeat: no-repeat;
+        padding-top: 150px; }
+        body div.App div.content div.content-what-i-did div.i-did-item {
+          text-align: center;
+          padding: 10px 0; }
+          body div.App div.content div.content-what-i-did div.i-did-item div.show-icon i {
+            font-size: 40px;
+            color: #44c7f4; }
+          body div.App div.content div.content-what-i-did div.i-did-item div.show-name {
+            color: white;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: uppercase; }
+          body div.App div.content div.content-what-i-did div.i-did-item div.show-count {
+            font-size: 16px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif; }
+        @media screen and (max-width: 768px) {
+          body div.App div.content div.content-what-i-did {
+            padding-top: 100px; } }
+      body div.App div.content div.content-contact-me {
+        width: 100%;
+        min-height: 149px;
+        background-color: black;
+        padding: 15px;
+        margin-top: 40px; }
+        body div.App div.content div.content-contact-me div.container div.contact-me-item {
+          padding: 10px 10px;
+          text-align: center; }
+          body div.App div.content div.content-contact-me div.container div.contact-me-item div.child {
+            background-color: #333;
+            padding: 10px; }
+            body div.App div.content div.content-contact-me div.container div.contact-me-item div.child div.show-icon {
+              background-color: #44c7f4;
+              border-radius: 50px;
+              width: 55px;
+              height: 55px;
+              margin: 0 auto; }
+              body div.App div.content div.content-contact-me div.container div.contact-me-item div.child div.show-icon i {
+                color: #fff;
+                font-size: 1em;
+                line-height: 3.4em; }
+            body div.App div.content div.content-contact-me div.container div.contact-me-item div.child div.show-way {
+              color: white;
+              text-transform: uppercase;
+              font-size: 12px;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              padding: 5px 0; }
+            body div.App div.content div.content-contact-me div.container div.contact-me-item div.child div.show-value {
+              color: #999;
+              font-size: 14px;
+              font-family: 'Times New Roman', Times, serif; }
+            body div.App div.content div.content-contact-me div.container div.contact-me-item div.child:hover div.show-icon {
+              background-color: white; }
+              body div.App div.content div.content-contact-me div.container div.contact-me-item div.child:hover div.show-icon i {
+                color: black; }
+      body div.App div.content div.heading-title-cm-bottom-text {
+        padding: 10px 0 30px 0;
+        text-align: center; }
+        body div.App div.content div.heading-title-cm-bottom-text h1 {
+          color: #111;
+          font-size: 2em;
+          letter-spacing: 2px;
+          font-family: 'Gidugu', sans-serif;
+          text-transform: uppercase; }
+          body div.App div.content div.heading-title-cm-bottom-text h1.white-color {
+            color: white; }
+          body div.App div.content div.heading-title-cm-bottom-text h1.blue-color {
+            color: #44c7f4; }
+        body div.App div.content div.heading-title-cm-bottom-text h4 {
+          font-family: "Courier New", Courier, monospace;
+          color: #44c7f4;
+          font-size: 25px;
+          height: 1.4;
+          text-transform: uppercase; }
+        @media screen and (max-width: 768px) {
+          body div.App div.content div.heading-title-cm-bottom-text h1 {
+            font-size: 1.7em; }
+          body div.App div.content div.heading-title-cm-bottom-text h4 {
+            font-size: 1.0em; } }
+      body div.App div.content div.content-show-fields-group {
+        color: white;
+        max-height: 769px;
+        min-height: 649px;
+        height: 759px;
+        background-color: #f3f2f2;
+        padding-top: 100px; }
+        @media screen and (max-width: 1268px) {
+          body div.App div.content div.content-show-fields-group {
+            padding-top: 40px;
+            height: 769px; } }
+  @media screen and (max-width: 1268px) and (max-width: 990px) {
+    body div.App div.content div.content-show-fields-group {
+      height: 649px; } }
+        body div.App div.content div.content-show-fields-group div.show-fields-group div.time-field-item {
+          margin: 15px; }
+          body div.App div.content div.content-show-fields-group div.show-fields-group div.time-field-item:not(:last-child) {
+            border-bottom: 0.5px solid gray; }
+          body div.App div.content div.content-show-fields-group div.show-fields-group div.time-field-item div.row div.field-item-time {
+            border-left: 5px solid red;
+            padding: 10px 5px; }
+            body div.App div.content div.content-show-fields-group div.show-fields-group div.time-field-item div.row div.field-item-time strong {
+              color: black;
+              font-size: 18px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              font-family: Georgia, serif;
+              text-align: justify; }
+          body div.App div.content div.content-show-fields-group div.show-fields-group div.time-field-item div.row div.field-item-description div.show-field-name {
+            color: black;
+            font-size: 1.6em;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase; }
+          body div.App div.content div.content-show-fields-group div.show-fields-group div.time-field-item div.row div.field-item-description div.show-field-description p {
+            color: black;
+            font-size: 0.9em;
+            line-height: 1.9em;
+            color: #777;
+            text-align: justify;
+            padding-top: 20px; }
